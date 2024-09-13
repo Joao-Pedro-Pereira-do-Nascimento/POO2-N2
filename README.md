@@ -19,4 +19,4 @@ Configuração do Banco de Dados: Execute o script SQL para criar e configurar o
 
 <h2>Licença</h2>
 
-Este projeto está licenciado sob a Licença MIT.
+Este projeto está licenciado sob a <a href="https://opensource.org/license/mit">Licença MIT</a>.
