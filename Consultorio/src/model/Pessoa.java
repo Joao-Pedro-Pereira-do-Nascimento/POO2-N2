@@ -37,4 +37,6 @@ public class Pessoa {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
+    
+    public abstract void exibirDados();
 }
