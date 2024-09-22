@@ -4,11 +4,11 @@ package model;
  *
  * @author wallyson
  */
-public class Pessoa {
+public abstract class Pessoa {
     protected int id;
     protected String nome;
     protected String sexo;
-    
+
     public Pessoa(String nome, String sexo) {
         this.nome = nome;
         this.sexo = sexo;
