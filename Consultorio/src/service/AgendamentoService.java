@@ -38,7 +38,7 @@ public class AgendamentoService {
         }
         agendamento.informacoesAgendamento();
         
-        sc.close();
+        //sc.close();
     }
 
     public List<Agendamento> listarAgendamentos() {
