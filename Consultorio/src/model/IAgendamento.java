@@ -17,4 +17,5 @@ public interface IAgendamento {
     void setMedico(Medico medico);
     void cancelar();
     void confirmar();
+    void informacoesAgendamento();
 }
