@@ -1,23 +1,27 @@
 
+import application.Consultorio;
+import exceptions.MedicoNaoEncontradoException;
 import java.util.Date;
 import model.Agendamento;
 import model.Medico;
 import model.Paciente;
+import service.AgendamentoService;
 
 /**
  *
  * @author wallyson
  */
 public class Teste {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MedicoNaoEncontradoException {
         Medico m = new Medico("Dr. Pimenta", "M", "CRM984567", 1);
         Paciente p = new Paciente("Maria", "F", "1555/02/23", "1123654897", "maria@gamil.com");
         
-        Agendamento a = new Agendamento(new Date("2024/11/11 10:25"), p, m);
+        AgendamentoService agendamento = new AgendamentoService();
         
-        a.informacoesAgendamento();
-        a.confirmar();
-        a.informacoesAgendamento();
+        agendamento.agendar(p, m, new Date());
+        agendamento.confirmarAgendamento();
         
+        Consultorio consultorio = new Consultorio();
+ 
     }
 }
